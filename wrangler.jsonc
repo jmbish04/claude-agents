@@ -6,6 +6,8 @@
   "compatibility_flags": ["nodejs_compat"],
   "observability": {
     "enabled": true,
+    "traces": { "enabled": false },
+    "logs": { "enabled": true, "invocation_logs": false }
   },
   // Non-secret vars. Secrets go through `wrangler secret put`. Anything you
   // put here is visible in the dashboard and stored in the deploy bundle.
